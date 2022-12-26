@@ -27,8 +27,8 @@ app.use(bodyParser.json({limit:"30mb",extended:true}))
 app.use(bodyParser.urlencoded({limit:"30mb",extended:true}))
 
 
-app.use('/posts',postRoutes)
-app.get('/',(req,res)=>{res.send('Merhaba')})
+app.use('/',postRoutes)
+
 
 app.listen(PORT,()=>{
         console.log(`Server läuft auf PORT : ${PORT}`);
