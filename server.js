@@ -26,7 +26,7 @@ app.use(morgan('dev'))
 app.use(bodyParser.json({limit:"30mb",extended:true}))
 app.use(bodyParser.urlencoded({limit:"30mb",extended:true}))
 
-app.use('/',(req,res)=>{res.send('Hallo')})
+
 app.use('/posts',postRoutes)
 
 app.listen(PORT,()=>{
